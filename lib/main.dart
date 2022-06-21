@@ -29,7 +29,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
 
   void showMetaMapFlow() {
-    MetaMapFlutter.showMetaMapFlow("610b96fb7cc893001b135505", "610b96fb7cc893001b135504", {});
+    MetaMapFlutter.showMetaMapFlow("YOUR_CLIENT_ID", "YOUR_FLOW_ID", {});
     MetaMapFlutter.resultCompleter.future.then((result) => Fluttertoast.showToast(
         msg: result is ResultSuccess ? "Success ${result.verificationId}" : "Cancelled",
         toastLength: Toast.LENGTH_SHORT,
